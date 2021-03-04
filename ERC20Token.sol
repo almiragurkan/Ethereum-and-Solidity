@@ -39,11 +39,11 @@ contract ERC20Token is ERC20Interface, SafeMath {
     
  
     constructor() public {
-        name = "ERC20Token";
-        symbol = "ETH";
+        name = "PurpleToken";
+        symbol = "PRP";
         decimals = 18; //18 decimal önerilen değerdi. İzin verilen maksimum ondalık basamak sayısı 18'dir.
         //Token gönderirken göndermek istediğim miktarın yanına 18 tane 0 koyarak gönderiyorum.
-        _totalSupply = 100000000000000000000000000;
+        _totalSupply = 10000000000000000000000000;
         
         balances[msg.sender] = _totalSupply;
         emit Transfer(address(0), msg.sender, _totalSupply);
